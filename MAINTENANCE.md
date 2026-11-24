@@ -22,3 +22,8 @@
 
 - GitHub Pages 的 `gh-pages` 分支构建成功，项目地址继承账号主页绑定的 `www.limoshi.shop`。发布时公共 DNS 查询返回域名不存在。
 - 用 `python3 scripts/build-offline.py <输出文件.html>` 生成可直接在浏览器打开的独立 HTML。此文件内嵌代码、样式与快照数据，发布在 GitHub Releases 中。
+
+## 2026-11-25｜恢复在线演示入口
+
+- 账号主页解绑旧域名后，项目恢复使用 GitHub Pages 默认地址。README 的「在线演示」和仓库 About 栏的网站链接指向该地址。 [上海地铁票价地图](https://qthe138.github.io/shanghai-metro-fare-map/)
+- 已在公开演示中验证虹桥火车站至南京东路显示新票价 7 元，切换「涨幅」显示上涨 2 元。
