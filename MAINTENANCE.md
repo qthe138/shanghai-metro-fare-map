@@ -17,3 +17,8 @@
 - 将网站、测试和维护文档提交到 `main`，用 `dist/` 生成独立的 `gh-pages` 发布分支。
 - GitHub Pages 从 `gh-pages` 根目录提供静态文件。`dist/.nojekyll` 用于直接提供构建产物，页面使用相对链接以适配项目路径。
 - 后续在 `main` 提交并通过 `node --test` 后，先推送 `main`，再运行 `git subtree push --prefix=dist origin gh-pages`，并检查 GitHub Pages 部署和线上交互。
+
+## 2026-11-25｜补充独立 HTML 下载
+
+- GitHub Pages 的 `gh-pages` 分支构建成功，项目地址继承账号主页绑定的 `www.limoshi.shop`。发布时公共 DNS 查询返回域名不存在。
+- 用 `python3 scripts/build-offline.py <输出文件.html>` 生成可直接在浏览器打开的独立 HTML。此文件内嵌代码、样式与快照数据，发布在 GitHub Releases 中。
